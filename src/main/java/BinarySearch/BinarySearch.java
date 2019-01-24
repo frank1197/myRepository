@@ -28,9 +28,9 @@ public class BinarySearch {
         if (sourceData[index] == target) {
             return index;
         } else if (target < sourceData[index]) {
-            return BinarySearch(start, end - 1, target, sourceData);
+            return BinarySearch(start, index - 1, target, sourceData);
         } else if (target > sourceData[index]) {
-            return BinarySearch(start + 1, end, target, sourceData);
+            return BinarySearch(index + 1, end, target, sourceData);
         }
 
         return -1;
