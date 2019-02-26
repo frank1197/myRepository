@@ -17,7 +17,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int[] sourceData = {1, 3, 4, 5, 7, 8, 11, 13, 16 };
-        int result = BinarySearch(0, sourceData.length-1, 16, sourceData);
+        int result = BinarySearch(0, sourceData.length-1, 3, sourceData);
         System.out.println(result);
     }
 
