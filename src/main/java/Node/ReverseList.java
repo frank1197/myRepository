@@ -25,6 +25,7 @@ public class ReverseList {
 
         Node node = reverseList(list.head);
 
+
         while (node != null) {
             System.out.println(node.data);
             node = node.next;
@@ -52,5 +53,25 @@ public class ReverseList {
         }
 
         return reverseHead;
+    }
+
+    /**
+     * 头插法
+     *
+     * @param head
+     * @return
+     */
+    private ListNode reverseList(ListNode head) {
+        // 头结点
+        ListNode root = new ListNode(0);
+        ListNode nextNode;
+        while (head != null) {
+            nextNode = head.next;
+            head.next = root.next;
+            root.next = head;
+            head = nextNode;
+        }
+
+        return root.next;
     }
 }
