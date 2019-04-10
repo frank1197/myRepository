@@ -15,6 +15,9 @@ package Design.singleton;/**
  */
 public class Singleton {
 
+    /** volatile说明：主要在于singleton = new Singleton()这句，这并非是一个原子操作。
+        通过volatile保证了在一个写操作（[1-2-3]）完成之前，不会调用读操作（if (instance == null)）
+     **/
     private static volatile Singleton singleton = null;
 
     private Singleton(){};
