@@ -1,4 +1,4 @@
-package singleton;/**
+package Design.singleton;/**
  * ${DESCRIPTION}
  *
  * @author yanfeng3
