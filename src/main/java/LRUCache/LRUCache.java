@@ -67,7 +67,7 @@ public class LRUCache {
     }
 
     private void moveNodeToFirst(LinkNode node){
-        if(first==node) return;
+        if(first==node) {return;}
         if(node.pre!=null){
             node.pre.next=node.next;
         }

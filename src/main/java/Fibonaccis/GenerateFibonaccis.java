@@ -16,13 +16,13 @@ package Fibonaccis;/**
 public class GenerateFibonaccis {
 
     public static void main(String[] args) {
-//        int n = 10;
-//        Integer[] fib = getFibnaccis(n);
-//        for (int i = 0; i < n; i++) {
-//            System.out.println(Long.toUnsignedString(fib[i]) + " ");
-//        }
+        int n = 10;
+        Integer[] fib = getFibnaccis(n);
+        for (int i = 0; i < n; i++) {
+            System.out.println(Long.toUnsignedString(fib[i]) + " ");
+        }
 
-        System.out.println(Fibonacci(5));
+//        System.out.println(Fibonacci(5));
 
     }
 
